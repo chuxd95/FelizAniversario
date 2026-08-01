@@ -198,10 +198,10 @@ y por todos los momentos
 que siempre guardaré.
 
 
-Te amo, Kimberly ❤️
+Te Amo Mucho Mi Reyna, Kimberly Manuyama❤️
 
 
-Alejandro
+De tu Chusito y Esposito: Alejandro Chu
 
 `;
 
