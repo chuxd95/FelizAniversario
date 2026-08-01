@@ -1,0 +1,587 @@
+/* =====================================
+   RECUERDOS
+   Alejandro ❤️ Kimberly
+===================================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    min-height:100vh;
+
+    font-family:'Segoe UI', sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.7)
+    ),
+    url("../img/fondo.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* ==========================
+   CORAZONES
+========================== */
+
+#corazones{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    top:0;
+
+    left:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:0;
+
+}
+
+
+
+/* ==========================
+   CABECERA
+========================== */
+
+.inicio-amor{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+
+.inicio-amor h1{
+
+    font-size:55px;
+
+    color:#ff7eb9;
+
+    text-shadow:
+    0 0 10px #ff7eb9,
+    0 0 20px #ff7eb9;
+
+}
+
+
+.inicio-amor h2{
+
+    margin-top:25px;
+
+    font-size:30px;
+
+}
+
+
+.inicio-amor p{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+}
+
+
+
+/* ==========================
+   GALERIA
+========================== */
+
+
+.galeria{
+
+    position:relative;
+
+    z-index:1;
+
+    padding:60px 30px;
+
+    text-align:center;
+
+}
+
+
+.galeria h2,
+.videos h2,
+.mensaje h2{
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+    color:#ffd1e8;
+
+}
+
+
+
+.fotos{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.foto{
+
+    width:260px;
+
+    background:#ffffff20;
+
+    backdrop-filter:blur(8px);
+
+    padding:15px;
+
+    border-radius:20px;
+
+    transition:.5s;
+
+}
+
+
+.foto:hover{
+
+    transform:translateY(-15px)
+    rotate(2deg);
+
+}
+
+
+
+.foto img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+
+.foto p{
+
+    margin-top:15px;
+
+    font-size:18px;
+
+}
+
+
+
+/* ==========================
+   VIDEOS
+========================== */
+
+
+.videos{
+
+    position:relative;
+
+    z-index:1;
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+
+
+video{
+
+    width:80%;
+
+    max-width:700px;
+
+    border-radius:20px;
+
+}
+
+
+
+/* ==========================
+   MENSAJE
+========================== */
+
+
+.mensaje{
+
+    position:relative;
+
+    z-index:1;
+
+    padding:60px;
+
+    text-align:center;
+
+}
+
+
+.mensaje p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:25px;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================
+   CORAZONES FLOTANDO
+========================== */
+
+
+.corazon{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    animation:subir 8s linear infinite;
+
+}
+
+
+
+@keyframes subir{
+
+
+    from{
+
+        transform:translateY(0)
+        scale(1);
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:translateY(-110vh)
+        scale(1.8);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================
+   CARTA DE AMOR
+========================== */
+
+
+.carta-amor{
+
+    padding:80px 20px;
+
+    position:relative;
+
+    z-index:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+.sobre{
+
+    max-width:850px;
+
+    background:#ffffff15;
+
+    backdrop-filter:blur(10px);
+
+    padding:45px;
+
+    border-radius:25px;
+
+    border:1px solid #ffffff30;
+
+    box-shadow:0 0 30px #ff7eb9;
+
+}
+
+
+
+.sobre h2{
+
+    text-align:center;
+
+    color:#ffd1e8;
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+#cartaTexto{
+
+    color:white;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    white-space:pre-line;
+
+}
+
+/* ==========================
+   FINAL DE LA HISTORIA
+========================== */
+
+
+.final-amor{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px;
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+
+
+.final-contenido{
+
+    max-width:800px;
+
+    animation:aparecerFinal 2s ease;
+
+}
+
+
+
+.final-contenido h1{
+
+    font-size:70px;
+
+    color:#ff7eb9;
+
+    text-shadow:
+    0 0 15px #ff7eb9,
+    0 0 30px #ff7eb9;
+
+}
+
+
+
+.final-contenido h2{
+
+    font-size:60px;
+
+    margin:30px;
+
+    color:white;
+
+}
+
+
+
+.final-contenido p{
+
+    font-size:25px;
+
+    line-height:1.8;
+
+    margin:20px;
+
+}
+
+
+
+.final-contenido h3{
+
+    margin-top:40px;
+
+    font-size:35px;
+
+    color:#ffd1e8;
+
+}
+
+
+
+@keyframes aparecerFinal{
+
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.5);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+
+}
+
+/* ==========================
+   APAGAR SISTEMA
+========================== */
+
+
+.apagado{
+
+    min-height:80vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+.apagado-contenido{
+
+    padding:50px;
+
+}
+
+
+.apagado h2{
+
+    font-size:35px;
+
+    color:#ffd1e8;
+
+}
+
+
+.apagado p{
+
+    font-size:22px;
+
+    margin:25px;
+
+}
+
+
+
+#btnApagar{
+
+    padding:18px 50px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#d50000;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+
+#btnApagar:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+#mensajeApagado{
+
+    margin-top:35px;
+
+    font-size:30px;
+
+    color:white;
+
+}
